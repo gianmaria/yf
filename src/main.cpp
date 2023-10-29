@@ -1,3 +1,10 @@
+// This is a personal academic project. Dear PVS-Studio, please check it.
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: https://pvs-studio.com
+
+// https://fc.yahoo.com/
+// https://query2.finance.yahoo.com/v1/test/getcrumb
+// https://query2.finance.yahoo.com/v7/finance/quote?symbols=TSLA&crumb=gYdBGSAxNKs
+
 #include <windows.h>
 #include <wininet.h>
 
@@ -66,7 +73,7 @@ int wmain()
         }
 
         const wchar_t* headers =
-            L"User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0)\r\n"
+            //L"User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0)\r\n"
             L"Accept: application/json\r\n";
 
         const wchar_t* url = L"https://httpbin.org/get";
